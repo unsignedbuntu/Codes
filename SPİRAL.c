@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <conio.h>
 #define SIZE 5
+#define ROWCHOOSE row += (way== 'r' ? 1 : (way== 'l' ? -1 : 0))
+#define COLUMNCHOOSE column += (way== 'd' ? 1 : (way== 'u' ? -1 : 0))
+#define CHOOSE  way= (way== 'r' ? 'd' : (way== 'd' ? 'l' : (way== 'l' ? 'u' : (way== 'u' ? 'r' : way))))
 
 int main()
 {
     
-    int i, j = 0, ekle = 1, sat = SIZE / 2, sut = SIZE / 2, flag = 0, d[SIZE][SIZE];
-    char yon = 'r';
+    int i, j = 0, plus = 1, row = SIZE / 2, column = SIZE / 2, flag = 0, d[SIZE][SIZE];
+    char way = 'r';
     
     for (i = 1; i < SIZE * SIZE + 1;)
     {
-        d[sat][sut] = i++;
+        d[row][column] = i++;
+      
+       ROWCHOOSE;
+       COLUMNCHOOSE;
         
-        sut += (yon == 'r' ? 1 : (yon == 'l' ? -1 : 0));
-        sat += (yon == 'd' ? 1 : (yon == 'u' ? -1 : 0));
-        
-        if ( (i%ekle==1) || i==2 )
+        if ( (i%plus==1) || i==2 )
         {   
-            if (flag = !flag)  
-            {
-                ekle++;
-            }
+            if (flag = !flag) 	plus++;
             
-            yon = (yon == 'r' ? 'd' : (yon == 'd' ? 'l' : (yon == 'l' ? 'u' : (yon == 'u' ? 'r' : yon))));
+           CHOOSE;
         }
     }
     
