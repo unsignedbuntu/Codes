@@ -1,33 +1,23 @@
 #include <stdio.h>
 #include <conio.h>
+#define SIZE 5
 
 int main()
 {
-    int x = 5;
     
-    int i, j = 0, ekle = 1, sat = x / 2, sut = x / 2, flag = 0, d[x][x];
+    int i, j = 0, ekle = 1, sat = SIZE / 2, sut = SIZE / 2, flag = 0, d[SIZE][SIZE];
     char yon = 'r';
     
-    for (i = 0; i < x; i++)
+    for (i = 1; i < SIZE * SIZE + 1;)
     {
-        for (j = 0; j < x; j++)
-        {
-            d[i][j] = 0;
-        }
-    }
-    
-    for (i = 1, j = 0; i < x * x + 1; i++, j--)
-    {
-        d[sat][sut] = i;
+        d[sat][sut] = i++;
         
         sut += (yon == 'r' ? 1 : (yon == 'l' ? -1 : 0));
         sat += (yon == 'd' ? 1 : (yon == 'u' ? -1 : 0));
         
-        if (!j)
-        {
-            j = ekle;
-            // USTA GELDI
-            if (flag = !flag) // ADAM KAZANDI
+        if ( (i%ekle==1) || i==2 )
+        {   
+            if (flag = !flag)  
             {
                 ekle++;
             }
@@ -36,11 +26,11 @@ int main()
         }
     }
     
-    for (i = 0; i < x; i++)
+    for (i = 0; i < SIZE; i++)
     {
-        for (j = 0; j < x; j++)
+        for (j = 0; j < SIZE; j++)
         {
-            printf("%5d", d[i][j]);
+            printf("%3d", d[i][j]);
         }
         
         printf("\n");
