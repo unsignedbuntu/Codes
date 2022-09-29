@@ -15,9 +15,9 @@ if(!deger)	return 0;
 if(taban==1) return deger; 
 
 
-if(taban>0) return ( usalma(deger,taban-1)*deger ); //pozýtýf us	
-if(taban<0) return ( 1 / (usalma(deger,-(taban+1) )*deger) );	// negatýf us
-if(deger<0 && taban%2==1) return( -usalma(deger,taban-1)*deger );  //negatýf sayi
+if(taban>0) return ( usalma(deger,taban-1)*deger ); //pozÄ±tÄ±f us	
+if(taban<0) return ( 1 / (usalma(deger,-(taban+1) )*deger) );	// negatÄ±f us
+if(deger<0 && taban%2==1) return( -usalma(deger,taban-1)*deger );  //negatÄ±f sayi
 }
 
 int main(){
