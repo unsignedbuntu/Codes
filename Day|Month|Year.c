@@ -1,3 +1,4 @@
+//Yil icin 100e gore modunu alip giriniz
 #include<stdio.h>
 #include<conio.h>
 
