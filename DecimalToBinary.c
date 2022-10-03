@@ -1,3 +1,6 @@
+//Oiss=Onluktan ikilik sayi sistemine
+//For EN:Oiss=Decimal to binary
+
 #include<stdio.h>
 #include<conio.h>
 
