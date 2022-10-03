@@ -20,7 +20,8 @@ int main()
         
         if ( (i%plus==1) || i==2 ) 
         {   
-            if (flag = !flag) //flag part works once in twice 	plus++;
+            if (flag = !flag) //flag part works once in twice 	
+            plus++;
             
            CHOOSE;
         }
