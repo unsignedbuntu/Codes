@@ -1,3 +1,4 @@
+//W31rd=Weird
 //one of my first code thats why has a lot of mistakes still dont know how it works just random code 
 #include <stdio.h>
 
