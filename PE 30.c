@@ -1,3 +1,4 @@
+//PE=Project Euler
 #include<stdio.h>
 #include<conio.h>
 #define POWEROF5 digit*digit*digit*digit*digit
