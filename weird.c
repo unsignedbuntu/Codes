@@ -1,4 +1,5 @@
- #include <stdio.h>
+//still dont know how it works just random code 
+#include <stdio.h>
 
 int main()
 {
