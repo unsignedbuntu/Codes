@@ -18,9 +18,9 @@ int main()
        ROWCHOOSE;
        COLUMNCHOOSE;
         
-        if ( (i%plus==1) || i==2 )
+        if ( (i%plus==1) || i==2 ) 
         {   
-            if (flag = !flag) 	plus++;
+            if (flag = !flag) //flag part works once in twice 	plus++;
             
            CHOOSE;
         }
