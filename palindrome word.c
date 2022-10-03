@@ -20,11 +20,8 @@ int main()
         }
     }
     
-    if(c == b)
-        printf("palindrom kelime girdiniz");
-    else
-        printf("palindrom kelime girmediniz");
-
+    (c == b) ?  printf("palindrom kelime girdiniz")  :  printf("palindrom kelime girmediniz");
+   
     getch();
     return 0;
 }
