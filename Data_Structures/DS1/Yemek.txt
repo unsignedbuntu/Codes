@@ -1,0 +1,4 @@
+TavukDoner 200 69.7
+EtDoner    150 53.8
+TavukPilav 100 38.4
+Kofte      150 48.5
